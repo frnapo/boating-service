@@ -28,22 +28,24 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-      {isOpen && (
-        <div className="md:hidden bg-blue-800 text-white text-center space-y-4 mt-2">
-          <a href="#home" className="block py-2">
-            Home
-          </a>
-          <a href="#services" className="block py-2">
-            Servizi
-          </a>
-          <a href="#about" className="block py-2">
-            Chi Siamo
-          </a>
-          <a href="#contact" className="block py-2">
-            Contatti
-          </a>
-        </div>
-      )}
+      <div
+        className={`md:hidden text-white text-center space-y-4  transition-transform duration-300 ease-in-out transform ${
+          isOpen ? "translate-y-0 opacity-100 max-h-screen" : "-translate-y-full opacity-0 max-h-0"
+        } overflow-hidden`}
+      >
+        <a href="#home" className="block py-2">
+          Home
+        </a>
+        <a href="#services" className="block py-2">
+          Servizi
+        </a>
+        <a href="#about" className="block py-2">
+          Chi Siamo
+        </a>
+        <a href="#contact" className="block py-2">
+          Contatti
+        </a>
+      </div>
     </nav>
   );
 };

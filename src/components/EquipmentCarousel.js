@@ -71,9 +71,9 @@ const EquipmentCarousel = () => {
         >
           {equipment.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-white p-6 rounded-lg h-full custom-min-h shadow-lg flex flex-col items-center select-none">
+              <div className="flex flex-col items-center select-none">
                 <div className="text-blue-600 text-6xl mb-4">{item.icon}</div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-700">{item.title}</h3>
+                <h3 className="text-xl font-semibold mb-2 text-gray-700 ">{item.title}</h3>
               </div>
             </SwiperSlide>
           ))}
