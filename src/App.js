@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Services from "./components/Services";
+import EquipmentCarousel from "./components/EquipmentCarousel";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import TestimonialsCarousel from "./components/TestimonialsCarousel";
+import Gallery from "./components/Gallery";
+import Map from "./components/Map";
+import Footer from "./components/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Hero />
+      <Services />
+      <About />
+      <EquipmentCarousel />
+      <TestimonialsCarousel />
+      <Gallery />
+      <Map />
+      <Contact />
+      <Footer />
+      <WhatsAppButton />
     </div>
   );
 }
